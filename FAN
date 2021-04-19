@@ -1,0 +1,43 @@
+package FanConstructor;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+import java.util.Scanner;
+public class Fan {
+    
+    Scanner scan = new Scanner(System.in);
+    //DECLARE ALL THE USED VARIABLE
+    String Brand,Colour;
+    double Price,Weight;
+    int Speed;
+    
+	//DEFAULT CONSTRUCTOR
+	Fan(){
+		System.out.print("Enter The Brand Of The Fan\t: ");
+		this.Brand=scan.next()+scan.nextLine();
+                
+		System.out.print("Enter The Colour Of The Fan\t: ");
+		this.Colour=scan.next()+scan.nextLine();
+                
+		System.out.print("Enter The Price Of The Fan\t: ");
+		this.Price=scan.nextDouble();
+                
+		System.out.print("Enter The Weight Of The Fan(gm)\t: ");
+		this.Weight=scan.nextDouble();
+		
+		System.out.print("Enter The Max Speed Of The Fan\t: ");
+		this.Speed=scan.nextInt();
+		
+	}
+	
+	//PARAMETERIZED CONSTRUCTOR
+	Fan(String b,String c,double p,double w,int s){
+		this.Brand=b;
+		this.Colour=c;
+		this.Price=p;
+		this.Weight=w;
+		this.Speed=s;
+	}
+}
