@@ -1,0 +1,32 @@
+package FanConstructor;
+
+/**
+ *
+ * @author CHUA WEE CHAN 271948
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Fan Media = new Fan(); //CREATE AN ONJECT NAME AS MEDIA
+        System.out.println("\n==========MEDIA FAN==========");
+        System.out.println("Brand\t\t : "+Media.Brand);
+        System.out.println("Color\t\t : "+Media.Colour);
+        System.out.println("Price\t\t : RM"+Media.Price);
+        System.out.println("Weight\t\t : "+Media.Weight+"gm");
+        System.out.println("Speed\t\t : "+Media.Speed);
+        
+        Fan Pansonic = new Fan("Pansonic","Silver",250,3500,'3');
+        System.out.println("\n=========PANSONIC FAN=========");
+        System.out.println("Brand\t\t : "+Pansonic.Brand);
+        System.out.println("Color\t\t : "+Pansonic.Colour);
+        System.out.println("Price\t\t : RM"+Pansonic.Price);
+        System.out.println("Weight\t\t : "+Pansonic.Weight+"gm");
+        System.out.println("Speed\t\t : "+Pansonic.Speed);
+	
+    }
+    
+}
